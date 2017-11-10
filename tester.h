@@ -12,30 +12,28 @@
 #include <vector>
 #include "LinkedListOfInts.h"
 #include "List.h"
-#include "Node.h"
 
 class tester
 {
 	public:
-	tester();
 
-	~tester();
-
-  void run();
-
-	bool isEmptyTest();
-
-	bool sizeTest();
-
-	bool searchTest();
-
-	bool addBackTest();
-
-	bool addFrontTest();
-
-	bool removeBackTest();
-
-	bool removeFrontTest();
+		void run();
+	
+		bool isEmptyTest();
+	
+		bool sizeTest();
+	
+		bool searchTest();
+	
+		bool addBackTest();
+	
+		bool addFrontTest();
+	
+		bool removeBackTest();
+	
+		bool removeFrontTest();
+		
+		void printVector(std::vector<int> myVect);
 
 	private:
 };

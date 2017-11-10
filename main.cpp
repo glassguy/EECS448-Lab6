@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 	tester myTester;
 	myTester.run();
 
-	std::cout << "Running...\nAnd we're done.\nGoodbye.\n";
+	//std::cout << "Running...\nAnd we're done.\nGoodbye.\n";
 
 	return (0);
 

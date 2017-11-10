@@ -1,0 +1,11 @@
+Things that don't work:
+    isEmpty()
+    addBack()
+    removeBack()
+    removeFront()
+
+Reasoning:
+    isEmpty() always returns that the list is empty regardless whether it is or not.
+    addBack() doesn't place the correct values in the right location.
+    removeBack() doesn't decrement size and seems to only return false, this might partly be due to some kind of dependence on isEmpty(). Also doesn't seem to remove values correctly.
+    removeFront() doesn't decrement size and seems to only return false, this might partly be due to some kind of dependence on isEmpty(), similar to removeBack(). Also doesn't seem to remove values correctly.

@@ -4,15 +4,15 @@
 
 #Add needed Test.o
 prog: main.o tester.o
-	g++ -g -Wall -std=c++11 main.o LinkedListOfInts.o -o prog
+	g++ -g -Wall -std=c++11 main.o tester.o LinkedListOfInts.o -o prog
 
-main.o: main.cpp tester.h
+main.o: main.cpp
 	g++ -g -Wall -std=c++11 -c main.cpp
 
 #Add needed Test.o recipe and compiler command
-tester.o: tester.h
+tester.o: tester.cpp
 	g++ -g -Wall -std=c++11 -c tester.cpp
 
 #DON'T delete LinkedList.o!
 clean:
-	rm main.o *.*~ prog
+	rm main.o tester.o *.*~ prog
